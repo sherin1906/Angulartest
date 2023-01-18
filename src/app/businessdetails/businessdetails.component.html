@@ -1,2 +1,82 @@
 <app-header></app-header>
-<app-addeditdetails *ngIf="editpopup"></app-addeditdetails>
+<section class="wrapperuser" fxLayout="row" fxLayoutGap="30px">
+    <div class="userinfo">
+        <mat-card style=" padding: 10px 40px;">
+            <img mat-card-image src="../../assets/user.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <mat-card-title class="text-center">Jone Smith</mat-card-title>
+                <div class="designtndetail text-center">
+                    <p><small>CFA, CIC</small></p>
+                    <h5>Premium Member</h5>
+                </div>
+                <p><mat-icon class="v-middle">school</mat-icon> Insurance Agent, Attorney, Accountant</p>
+                <mat-divider></mat-divider>
+                <p class="maincolor text-center mar-t15"><mat-icon class="v-middle">email</mat-icon> Send Email</p>
+            </mat-card-content>
+
+        </mat-card>
+    </div>
+    <div class="busidetail">
+        <mat-card>
+            <h5 class="detailheading">Business Details</h5>
+            <div style="padding: 10px 20px;">
+                <div class="wrapperdflex">
+                    <div class="wrapperprof">
+                        <h6><mat-icon>person</mat-icon>Profile</h6>
+                    </div>
+                    <div class="wrappereditbtn">
+                        <button (click)="openAddEdit()" mat-raised-button class="mainbtn">Edit Profile</button>
+                    </div>
+                </div>
+                <div class="wrapperuserflex">
+                    <div class="wrappername">
+                        <label>Name</label>
+                    </div>
+                    <div class="wrapperinfo">
+                        <p>Mary,Jason & Hodge of Attorney</p>
+                    </div>
+                </div>
+                <div class="wrapperuserflex">
+                    <div class="wrappername">
+                        <label>Domain</label>
+                    </div>
+                    <div class="wrapperinfo">
+                        <p>www.mjhaattorneys.com</p>
+                    </div>
+                </div>
+                <div class="wrapperuserflex">
+                    <div class="wrappername">
+                        <label>Gender</label>
+                    </div>
+                    <div class="wrapperinfo">
+                        <p>Male</p>
+                    </div>
+                </div>
+                <div class="wrapperuserflex">
+                    <div class="wrappername">
+                        <label>Date of Birth</label>
+                    </div>
+                    <div class="wrapperinfo">
+                        <p>8th June 1979</p>
+                    </div>
+                </div>
+                <div class="wrapperuserflex">
+                    <div class="wrappername">
+                        <label>Phone number</label>
+                    </div>
+                    <div class="wrapperinfo">
+                        <p>+8794202613</p>
+                    </div>
+                </div>
+                <div class="wrapperuserflex">
+                    <div class="wrappername">
+                        <label>Location</label>
+                    </div>
+                    <div class="wrapperinfo">
+                        <p>12, Street, Sillicon Valley, Avenue NE, Huntsville</p>
+                    </div>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</section>

@@ -1,1 +1,37 @@
-<p>addeditdetails works!</p>
+<h5 class="detailheading">Edit Profile</h5>
+<section class="editaddform">
+    <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Domain</mat-label>
+        <input matInput>
+    </mat-form-field>
+
+    <mat-radio-group>
+        <mat-label>Gender</mat-label>
+        <mat-radio-button value="1">Male</mat-radio-button>
+        <mat-radio-button value="2">Female</mat-radio-button>
+    </mat-radio-group>
+    <mat-form-field appearance="outline">
+        <mat-label>Date of Birth</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Phone number</mat-label>
+        <span matPrefix>&nbsp;+91 &nbsp;</span>
+        <input type="tel" matInput>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Location</mat-label>
+        <textarea matInput></textarea>
+    </mat-form-field>
+</section>
+<div class="footer ">
+    <button mat-raised-button class="mainbtn" [mat-dialog-close] cdkFocusInitial>Close</button>
+    <!-- <button (click)="openAddEdit()" mat-raised-button class="mainbtn">Edit Profile</button> -->
+</div>

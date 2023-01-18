@@ -1,17 +1,35 @@
 <mat-toolbar>
     <ng-container>
         <img src="../../assets/logo.png" alt="">
-        <ul class="nav-items"> 
+        <ul class="nav-items mobilehdn">
             <li> <mat-icon>home</mat-icon>Home</li>
             <li><mat-icon>group</mat-icon> Trustees</li>
             <li class="maincolor"><mat-icon>person</mat-icon> Proffessionals</li>
             <li><mat-icon>more_horiz</mat-icon> More</li>
         </ul>
         <span class="example-spacer"></span>
-       
-        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-            <mat-icon>favorite</mat-icon>
+
+        <button mat-icon-button>
+            <mat-icon>search</mat-icon>
         </button>
-        <button mat-raised-button class="mainbtn">Invite</button>
+
+        <button mat-raised-button class="mainbtn"><mat-icon style="font-size: 16px;">email</mat-icon>
+            Invite</button>
+        <img class="smallimg" src="../../assets/user.jpg" alt="" />
     </ng-container>
 </mat-toolbar>
+<ul class="nav-items desktophdn">
+    <li>
+        <p><mat-icon>home</mat-icon></p>
+        Home
+    </li>
+    <li>
+        <p><mat-icon>group</mat-icon></p> Trustees
+    </li>
+    <li class="maincolor">
+        <p><mat-icon>person</mat-icon></p> Proffessionals
+    </li>
+    <li>
+        <p> <mat-icon>more_horiz</mat-icon> </p> More
+    </li>
+</ul>

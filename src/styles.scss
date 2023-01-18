@@ -1,34 +1,337 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: #f6f8f7 !important;
+}
 
 .mat-toolbar {
-    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
-    background: #ffffff;
-    color: #080808;
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+  background: #ffffff;
+  color: #080808;
 }
+
 .example-spacer {
-    flex: 1 1 auto;
-  }
-  .mat-toolbar-single-row{padding: 0 50px!important;}
-  .nav-items {
-    display: flex;
-    font-size: 14px;
-    width: 100%;
-    padding-inline-start: 0;
+  flex: 1 1 auto;
+}
+
+.mat-toolbar-single-row {
+  padding: 0 50px !important;
+}
+
+.nav-items {
+  display: flex;
+  font-size: 14px;
+  width: 100%;
+  padding-inline-start: 0;
 }
 
 .nav-items mat-icon {
-    vertical-align: middle;
-    font-size: 22px;
+  vertical-align: middle;
+  font-size: 22px;
 }
+
 .nav-items li {
-    width: 15%;
-    list-style-type: none;
-    text-align: center;
-    font-weight: 400;
+  width: auto;
+  list-style-type: none;
+  text-align: center;
+  font-weight: 400;
+  cursor: pointer;
+  margin: 20px;
 }
-.maincolor{
+
+.maincolor {
   color: #c62128
+}
+
+.mainbtn {
+  background: #c62128 !important;
+  height: 30px !important;
+  width: 10%;
+  font-weight: 300;
+  color: #fff !important;
+}
+
+.smallimg {
+  width: 31px;
+  border: 1px solid #f1efef;
+  margin-left: 5px;
+  border-radius: 50%;
+}
+
+section {
+  padding: 10px 50px;
+
+}
+
+.userinfo {
+  width: 25%;
+}
+
+.busidetail {
+  width: 75%;
+}
+
+.mdc-card__media {
+  width: 60%;
+  margin: auto;
+  border-radius: 0 !important;
+}
+
+mat-card {
+  background-color: #fff !important;
+  box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px !important;
+
+}
+
+.text-center {
+  text-align: center;
+}
+
+.designtndetail p {
+  color: gray;
+  margin: 0;
+}
+
+.designtndetail h5 {
+  font-weight: 500;
+  margin: 0;
+}
+
+.mat-divider {
+  border-top-color: rgb(96 96 96 / 12%);
+}
+
+.v-middle {
+  vertical-align: middle;
+}
+
+.mar-t15 {
+  margin-top: 15px !important;
+}
+
+.detailheading {
+  padding: 10px !important;
+  background: #e7eacd !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  margin: 0 !important;
+}
+
+.wrapperdflex {
+  display: flex;
+  width: 100%;
+}
+
+.wrapperprof {
+  width: 80%;
+}
+
+.wrappereditbtn {
+  width: 20%;
+  text-align: end;
+}
+
+.wrapperprof h6 {
+  font-size: 15px;
+}
+
+.wrapperprof mat-icon {
+  font-size: 21px;
+  color: #747e37;
+  vertical-align: middle;
+}
+
+.wrappereditbtn .mainbtn {
+  width: auto;
+  font-size: 13px;
+}
+
+
+
+.cdk-overlay-pane {
+  max-width: 30vw !important;
+}
+
+
+
+mat-form-field {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.mat-mdc-form-field-bottom-align {
+  display: none;
+}
+
+/* To change mat form field border color */
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: black;
+}
+
+.mat-mdc-radio-button .mdc-radio .mdc-radio__native-control:enabled+.mdc-radio__background .mdc-radio__inner-circle {
+  border-color: #86161b !important;
+}
+
+.mat-mdc-radio-button .mdc-radio .mdc-radio__native-control:enabled:checked+.mdc-radio__background .mdc-radio__outer-circle {
+  border-color: #86161b !important;
+}
+
+.footer {
+  text-align: end;
+  background: #e7eacd;
+  padding: 10px;
+}
+
+.desktophdn {
+  display: none;
+}
+
+.mobilehdn {
+  display: flex;
+}
+
+.wrapperuserflex {
+  display: flex;
+  width: 100%;
+}
+
+.wrappername {
+  width: 20%;
+  font-weight: 500;
+}
+
+.wrappername {
+  width: 20%;
+  font-weight: 500;
+}
+
+// Media Query
+@media only screen and (max-width: 1024px) {
+  .mat-toolbar {
+    box-shadow: none;
+
+  }
+
+  .wrapperuser {
+    display: block !important;
+    width: 100%;
+  }
+
+  .mdc-card__media {
+    width: 40% !important;
+  }
+
+  .userinfo mat-card {
+    padding: 10px !important;
+  }
+
+  .busidetail {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .cdk-global-overlay-wrapper {
+    top: 40px !important;
+    justify-content: start !important;
+    align-items: start !important;
+    right: 0 !important;
+    left: 0 !important;
+    /* margin: auto!important; */
+    margin-left: 8px;
+  }
+
+  .cdk-overlay-pane {
+    max-width: 95vw !important;
+    margin: 0;
+  }
+
+  .wrapperprof {
+    width: 60% !important;
+  }
+
+  .wrappereditbtn {
+    width: 50% !important;
+  }
+
+  .wrapperuserflex {
+    display: block;
+    width: 100%;
+  }
+
+  .wrappername {
+    width: 100%;
+    font-weight: 500;
+  }
+
+  .nav-items p {
+    margin: 0;
+  }
+
+  .mobilehdn {
+    display: none;
+  }
+
+  .desktophdn {
+    display: flex;
+    background: white;
+    /* padding: 0; */
+    margin: 0;
+  }
+
+  .nav-items li {
+    width: 30%;
+    background: #fff;
+  }
+
+  .mat-toolbar-single-row {
+    padding: 0 10px !important;
+  }
+
+  .mainbtn {
+    width: auto !important;
+  }
+
+  .wrapperprof {
+    width: 70%;
+  }
+
+  .wrappereditbtn {
+    width: 30%;
+    text-align: end;
+  }
+
+  mat-toolbar img {
+    width: 25%;
+    margin-left: 15px;
+  }
+
+  .userinfo {
+    width: 50%;
+    margin: auto !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  mat-toolbar img {
+    width: 40%;
+  }
+
+  section {
+    padding: 10px 20px;
+  }
+
+
+  .userinfo {
+    width: 100%;
+  }
+
+
+
 }

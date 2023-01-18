@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AddeditdetailsComponent } from '../addeditdetails/addeditdetails.component';
 
 @Component({
   selector: 'app-businessdetails',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./businessdetails.component.scss']
 })
 export class BusinessdetailsComponent {
-  editpopup : boolean = false
+  constructor(public dialog: MatDialog) { }
+  openAddEdit() {
+    const dialogRef = this.dialog.open(AddeditdetailsComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+
 }
